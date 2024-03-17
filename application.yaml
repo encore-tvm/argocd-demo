@@ -8,9 +8,10 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/encore-tvm/argocd-demo.git
-    targetRevision: HEAD
-    path: dev
+    - repoURL: https://github.com/encore-tvm/argocd-demo.git
+      targetRevision: HEAD
+      path: dev
+
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
